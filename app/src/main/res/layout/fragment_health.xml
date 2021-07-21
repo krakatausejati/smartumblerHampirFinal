@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue2"
+    tools:context=".health.HealthFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="385dp"
+        android:layout_height="578dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="384dp"
+            android:layout_height="578dp">
+
+            <TextView
+                android:id="@+id/greeting_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/jonesy_capitals"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/dark_blue"
+                android:textSize="48sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="112dp"
+                android:layout_height="173dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="41dp"
+                android:src="@drawable/air"
+                app:layout_constraintBottom_toTopOf="@+id/harusDiminum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/greeting_txt" />
+
+            <TextView
+                android:id="@+id/harusDiminum"
+                android:layout_width="131dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:text="Sisa Air Yang Harus diminum"
+                android:fontFamily="@font/jonesy_capitals"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/keteranganAir2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/jonesy_capitals"
+                android:gravity="center"
+                android:text="1200 ML"
+                android:textColor="@color/dark_blue"
+                android:textSize="35sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/diMinum" />
+
+            <TextView
+                android:id="@+id/keteranganAir1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/jonesy_capitals"
+                android:gravity="center"
+                android:text="500 ML"
+                android:textColor="@color/dark_blue"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/harusDiminum" />
+
+            <TextView
+                android:id="@+id/diMinum"
+                android:layout_width="130dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/jonesy_capitals"
+                android:gravity="center"
+                android:text="Air Yang Sudah Diminum"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/diTumbler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/jonesy_capitals"
+                android:gravity="center"
+                android:text="Air di Tumbler"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/keteranganAir2" />
+
+            <TextView
+                android:id="@+id/keteranganKebutuhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="28dp"
+                android:fontFamily="@font/jonesy_capitals"
+                android:gravity="center"
+                android:text="Kebutuhan Kamu Belum Terpenuhi"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/keteranganAir3"
+                app:layout_constraintVertical_bias="0.111" />
+
+            <TextView
+                android:id="@+id/keteranganAir3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/jonesy_capitals"
+                android:gravity="center"
+                android:text="1000 ML"
+                android:textColor="@color/dark_blue"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/diTumbler" />
+
+            <ImageButton
+                android:id="@+id/btnRefresh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/light_blue"
+                android:src="@drawable/refresh_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnNotify"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnNotify"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="113dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/light_blue"
+                android:src="@drawable/notify_icon"
+                app:layout_constraintStart_toEndOf="@+id/greeting_txt"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
